@@ -3,7 +3,7 @@ import { ARCJET_KEY } from "./env.js";
 
 const aj = arcjet({
   key: ARCJET_KEY,
-//   characteristics: ["ip.src"],
+  characteristics: ["ip.src"],
   rules: [
     shield({ mode: "LIVE" }),
     detectBot({
